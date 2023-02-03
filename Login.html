@@ -9,25 +9,25 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section id="container">
-        <img src="image/appImage.jpg" class="image-logo" >
-    </section>
-    <section id="button-section">
-        <div>
-            <button type="button" class="btn btn-warning" style="width:20%; height: 60px;" onclick="newPage()">문정점</button>
-        </div>
-    </section>
-    <section id="user-input">
-        <label for="frame">ID:</label><br>
-        <input type="text" id="id_val" name="id_val" placeholder="아이디"><br>
-        <label for="frame">PASSWORD:</label><br>
-        <input type="text" id="pass_val" name="pass_val" placeholder="아이디"><br>
+    <section class="login-form">
+        <h1>LOGIN</h1>
+        <form action="">
+            <div class="user-input">
+                <input type="text" id="id_val" name="id_val" placeholder="Id"><br>
+                <label for="id">USER NAME</label>
+            </div>
+            <div class="user-input">
+                <input type="text" id="pass_val" name="pass_val" placeholder="Password"><br>
+                <label for="id">PASSWORD</label>
+            </div>
+            <div class="btn-area">
+                <button type="submit">Login</button>
+            </div>
+        </form>
+   
         
-        <!-- input 박스 안 글자 넣기 = placeholder -->
-    </section>
+    </div>
 
-            
-    
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 <script src="main.js"></script>
 </body>
