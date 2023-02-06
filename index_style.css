@@ -1,0 +1,22 @@
+#index-container {
+    text-align: center;
+}
+.image-logo {
+    width: 50%;
+}
+#button-section {
+    text-align: center;
+}
+#button-section button{
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+#user-input {
+    text-align: center;
+}  
+#button-section a {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 5px;
+}
