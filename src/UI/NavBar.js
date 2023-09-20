@@ -24,7 +24,7 @@ const NavBar = () => {
                     <Nav.Link href="#Event">Event</Nav.Link>
                     <Nav.Link href="#rank">Ranking</Nav.Link>
                 </Nav>
-                <Button variant="outline-light">Login</Button>{' '}
+                <Button variant="outline-light">Login</Button>
 
                 </Container>
       </Navbar>

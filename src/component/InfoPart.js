@@ -9,13 +9,13 @@ const InfoPart = () =>{
         <Nav.Link href="/home">공지</Nav.Link>
       </Nav.Item>
       <Nav.Item>
-        <Nav.Link eventKey="link-1">Today WOD</Nav.Link>
+        <Nav.Link eventKey="link-1">게시판</Nav.Link>
       </Nav.Item>
       <Nav.Item>
         <Nav.Link eventKey="link-2">Time</Nav.Link>
       </Nav.Item>
       <Nav.Item>
-      <Nav.Link eventKey="link-2">Contact Us</Nav.Link>
+      <Nav.Link eventKey="link-3">Contact Us</Nav.Link>
       </Nav.Item>
       <Nav.Item>
         <Nav.Link eventKey="disabled" disabled>

@@ -1,17 +1,31 @@
 import './App.css';
-import MainBanner from '../src/component/MainBanner';
-import React from 'react';
-import InfoPart from '../src/component/InfoPart';
-import NavBar from '../src/UI/NavBar';
+import React, {useState} from 'react';
+
+import Button from 'react-bootstrap/Button';
+
+import MainPage from './component/MainPage';
 
 
-function App() {
+function App(props) {
+
+  const [showMainPage, setShowMainPage] = useState(false);
+  const handleButtonClick = () => {
+    setShowMainPage(true);
+  }
+
   return (
-    <div className="App">
-      <NavBar></NavBar>
-      <MainBanner></MainBanner>
-      <InfoPart></InfoPart>
-    </div>
+   
+      <div className='App'>
+      
+        {showMainPage ? (
+        <MainPage />
+      ) : (
+        <button onClick={handleButtonClick}>MainPage 불러오기</button>
+      )}
+
+      </div>
+   
+  
   );
 }
 
