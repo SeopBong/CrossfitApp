@@ -1,0 +1,236 @@
+
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100');
+
+@mixin button($bcolor,
+$url,
+$x1,
+$y1,
+$bor,
+$col) {
+ background: $bcolor;
+ -webkit-mask: url($url);
+ mask: url($url);
+ -webkit-mask-size: $x1 $y1;
+ mask-size: $x1 $y1;
+ border: $bor;
+ color: $col;
+}
+.main-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column; /* 버튼을 세로로 정렬 */
+    align-items: center; /* 가운데 정렬 */
+    gap: 30px; /* 버튼 간의 간격을 20px로 설정 */
+
+  }
+
+  @media (min-height: 900px){
+    .main-container {
+     gap: 80px;
+    }
+}
+.footer {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 10vh;
+   }
+
+
+   
+.button-container-1 {
+    
+    position: relative;
+    width: 250px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0vh;
+    overflow: hidden;
+    border: 1px solid rgb(21,167,192);
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    transition: 0.5s;
+    letter-spacing: 1px;
+    border-radius: 8px;
+
+
+    button {
+    
+
+     width: 101%;
+     height: 100%;
+     font-family: 'Lato', sans-serif;
+     font-weight: 300;
+     font-size: 25px;
+     letter-spacing: 1px;
+     font-weight: bold;
+   
+     @include button(rgb(21,167,192), "https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/urban-sprite.png",
+     3000%,
+     100%,
+     none,
+     #fff);
+     cursor: pointer;
+     -webkit-animation: ani2 0.7s steps(29) forwards;
+     animation: ani2 0.7s steps(29) forwards;
+   
+     &:hover {
+      -webkit-animation: ani 0.7s steps(29) forwards;
+      animation: ani 0.7s steps(29) forwards;
+     }
+    }
+   }
+
+    
+.button-container-2 {
+    
+    position: relative;
+    width: 250px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0vh;
+    overflow: hidden;
+    border: 1px solid rgb(247, 113, 23);
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    transition: 0.5s;
+    letter-spacing: 1px;
+    border-radius: 8px;
+   
+    button {
+     width: 101%;
+     height: 100%;
+     font-family: 'Lato', sans-serif;
+     font-weight: 300;
+     font-size: 25px;
+     letter-spacing: 1px;
+     font-weight: bold;
+   
+     @include button(rgb(247, 113,  23), "https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/urban-sprite.png",
+     3000%,
+     100%,
+     none,
+     #fff);
+     cursor: pointer;
+     -webkit-animation: ani2 0.7s steps(29) forwards;
+     animation: ani2 0.7s steps(29) forwards;
+   
+     &:hover {
+      -webkit-animation: ani 0.7s steps(29) forwards;
+      animation: ani 0.7s steps(29) forwards;
+     }
+    }
+   }
+       
+.button-container-3 {
+    
+    position: relative;
+    width: 250px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0vh;
+    overflow: hidden;
+    border: 1px solid rgb(0,153,80);
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    transition: 0.5s;
+    letter-spacing: 1px;
+    border-radius: 8px;
+   
+    button {
+     width: 101%;
+     height: 100%;
+     font-family: 'Lato', sans-serif;
+     font-weight: 300;
+     font-size: 25px;
+     letter-spacing: 1px;
+     font-weight: bold;
+   
+     @include button(rgb(0,153,80), "https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/urban-sprite.png",
+     3000%,
+     100%,
+     none,
+     #fff);
+     cursor: pointer;
+     -webkit-animation: ani2 0.7s steps(29) forwards;
+     animation: ani2 0.7s steps(29) forwards;
+   
+     &:hover {
+      -webkit-animation: ani 0.7s steps(29) forwards;
+      animation: ani 0.7s steps(29) forwards;
+     }
+    }
+   }
+.mas {
+    position: absolute;
+    color: #000;
+    text-align: center;
+    width: 101%;
+    height: 100px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    position: absolute;
+    font-size: 25px;
+    margin-top: 34px;
+    overflow: hidden;
+    font-weight: bold;
+
+}
+
+
+@-webkit-keyframes ani {
+    from {
+     -webkit-mask-position: 0 0;
+     mask-position: 0 0;
+    }
+   
+    to {
+     -webkit-mask-position: 100% 0;
+     mask-position: 100% 0;
+    }
+   }
+   
+   @keyframes ani {
+    from {
+     -webkit-mask-position: 0 0;
+     mask-position: 0 0;
+    }
+   
+    to {
+     -webkit-mask-position: 100% 0;
+     mask-position: 100% 0;
+    }
+   }
+   
+   @-webkit-keyframes ani2 {
+    from {
+     -webkit-mask-position: 100% 0;
+     mask-position: 100% 0;
+    }
+   
+    to {
+     -webkit-mask-position: 0 0;
+     mask-position: 0 0;
+    }
+   }
+   
+   @keyframes ani2 {
+    from {
+     -webkit-mask-position: 100% 0;
+     mask-position: 100% 0;
+    }
+   
+    to {
+     -webkit-mask-position: 0 0;
+     mask-position: 0 0;
+    }
+   }
+   
+
+
+   
