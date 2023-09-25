@@ -1,34 +1,20 @@
 import './App.css';
-import React, {useState} from 'react';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+
 import SelectSite from './component/SelectSite';
-import Button from 'react-bootstrap/Button';
 
 import MainPage from './component/MainPage';
 
 
 function App(props) {
 
-  const [showMainPage, setShowMainPage] = useState(false);
-  const handleButtonClick = () => {
-    setShowMainPage(true);
-  }
-
   return (
-   
-      <div className='App'>
+    <div className='App'>
+      <SelectSite></SelectSite>
       
-       {/*
-        {showMainPage ? (
-        <MainPage />
-      ) : (
-        <Button variant="primary" size="lg" onClick={handleButtonClick}>
-        Block level button
-      </Button>
-      )}
-      */}
-    <SelectSite></SelectSite>
-      </div>
-   
+    </div>
   
   );
 }
