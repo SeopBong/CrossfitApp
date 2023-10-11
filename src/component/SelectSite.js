@@ -8,6 +8,7 @@ const SelectSite = () => {
   const [showButton1, setShowButton1] = useState(true);
   const [showButton2, setShowButton2] = useState(true);
   const [showButton3, setShowButton3] = useState(true);
+  
   const handleButtonClick = () => {
     setShowMainPage(true);
     setShowButton1(false);
@@ -15,7 +16,7 @@ const SelectSite = () => {
     setShowButton3(false);
   }
     return (
-        <div>
+        <div className="button-container">
          {showMainPage ? (
         <MainPage />
       ) : (

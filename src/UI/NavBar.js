@@ -1,13 +1,10 @@
 import React from "react";
 import '../UI/NavBar.css';
 
-
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Button from 'react-bootstrap/Button';
-
-
 
 
 const NavBar = () => {

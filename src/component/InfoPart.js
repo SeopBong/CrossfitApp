@@ -6,13 +6,14 @@ const InfoPart = () =>{
         <div className="info-container"> 
           <Nav justify variant="tabs" defaultActiveKey="/home">
       <Nav.Item>
-        <Nav.Link href="/home">공지</Nav.Link>
+      {/*<Nav.Link href="/board">공지</Nav.Link>*/}
+      <Nav.Link href="/notice">지점선택</Nav.Link>
       </Nav.Item>
       <Nav.Item>
-        <Nav.Link eventKey="link-1">게시판</Nav.Link>
+        <Nav.Link eventKey="board">공지</Nav.Link>
       </Nav.Item>
       <Nav.Item>
-        <Nav.Link eventKey="link-2">Time</Nav.Link>
+        <Nav.Link eventKey="link-2">게시판</Nav.Link>
       </Nav.Item>
       <Nav.Item>
       <Nav.Link eventKey="link-3">Contact Us</Nav.Link>

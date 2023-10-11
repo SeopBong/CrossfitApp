@@ -16,20 +16,19 @@ $col) {
  border: $bor;
  color: $col;
 }
+
 .main-container {
-    margin-top: 20px;
     display: flex;
     flex-direction: column; /* 버튼을 세로로 정렬 */
     align-items: center; /* 가운데 정렬 */
-    gap: 30px; /* 버튼 간의 간격을 20px로 설정 */
-
+   
   }
 
-  @media (min-height: 900px){
-    .main-container {
-     gap: 80px;
-    }
-}
+//   @media (min-height: 900px){
+//     .main-container {
+//      gap: 80px;
+//     }
+
 .footer {
     text-align: center;
     font-family: 'Lato', sans-serif;
@@ -41,7 +40,8 @@ $col) {
 
    
 .button-container-1 {
-    
+    top: 50px;
+
     position: relative;
     width: 250px;
     height: 100px;
@@ -55,8 +55,7 @@ $col) {
     transition: 0.5s;
     letter-spacing: 1px;
     border-radius: 8px;
-
-
+    
     button {
     
 
@@ -67,7 +66,7 @@ $col) {
      font-size: 25px;
      letter-spacing: 1px;
      font-weight: bold;
-   
+        
      @include button(rgb(21,167,192), "https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/urban-sprite.png",
      3000%,
      100%,
@@ -86,7 +85,8 @@ $col) {
 
     
 .button-container-2 {
-    
+    top: 100px;
+
     position: relative;
     width: 250px;
     height: 100px;
@@ -127,7 +127,7 @@ $col) {
    }
        
 .button-container-3 {
-    
+    top: 150px;
     position: relative;
     width: 250px;
     height: 100px;
